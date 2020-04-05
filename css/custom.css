@@ -1,0 +1,355 @@
+/* instagram logo link */
+
+
+.insta-logo {
+  margin-top: 14px;
+  margin-left: 10px;
+}
+
+
+.insta-logo a:hover{
+  border:none;
+}
+
+legend{
+  border:none;
+}
+
+.navbar-brand img{
+  height:38px;
+  margin-top:.75em;
+  margin-left:1em;
+}
+
+
+@media only screen and (min-width:768px) {
+.navbar-brand img{
+    margin-top:1em;
+}
+}
+
+
+@media only screen and (min-width:768px) {
+    .navbar-brand img.nega{
+       background: url("../img/jukitours-nega.svg") no-repeat;
+     display: block;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      width: 76px; /* Width of new image */
+      height: 38px; /* Height of new image */
+      padding-left: 76px; /* Equal to width of new image */
+    }
+
+    .insta-logo img.nega{
+       background: url("../img/instagram-logo-nega-32x32.png") no-repeat;
+     display: block;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      width: 34px; /* Width of new image */
+      height: 34px; /* Height of new image */
+      padding-left: 34px; /* Equal to width of new image */
+    }
+}
+
+
+
+
+/* Adventure table of prices and group sizes */
+
+#center {
+  text-align: center;
+  margin: 0 0 23px;
+
+}
+
+
+/* go to top button **********************************/
+
+#button {
+    display: inline-block;
+    background-color: #2b90d9;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, 
+      opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+  }
+  #button::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+  }
+  #button:hover {
+    cursor: pointer;
+    background-color: #333;
+  }
+  #button:active {
+    background-color: #555;
+  }
+  #button.show {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  #myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+
+/* MODAL IMAGE  *********************************/
+
+  #myImg:hover {opacity: 0.7;}
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  /* Modal Content (image) */
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+  
+  /* Caption of Modal Image */
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+  
+  /* Add Animation */
+  .modal-content, #caption {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+  }
+  
+  /* The Close Button */
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+    } 
+  }
+
+
+
+/* TABLE in adventures site **********************************************/
+
+
+.type-of-tour{
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.4;
+  margin: 23px 0 2px;
+  color: #2b90d9;
+}
+
+table {
+  border-spacing: 0;
+  width: 100%;
+  border:none;
+
+}
+
+
+td, th {
+  color: black;
+  padding: 10px;
+  text-align: center;
+  vertical-align: middle;
+  border:none;
+}
+
+th {
+  background-color: rgb(233, 233, 233);
+}
+
+tr:nth-child(odd) {
+  background: rgb(233, 233, 233);
+}
+
+/* trip advisor  ******************************************/
+
+.TA_cdsratingsonlynarrow {
+  width: auto;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  text-align: -moz-center;
+  text-align: -webkit-center;
+}
+
+/* levi logo ************************************************ */
+
+.levi-logo {
+  width: auto;
+  align-content: center;
+  text-align: -moz-center;
+  text-align: -webkit-center;
+}
+
+
+
+/* 
+.TA_cdswritereviewnew {
+  padding-left: 50%;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+ */
+
+/* .footer-contact {
+  text-align: center;;
+  background: #333333;
+  color: #ccc;
+  padding: 20px 0;
+  font-size: 13px;
+  line-height: 28px;
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+} */
+
+
+/* video */
+
+.carousel-caption{
+
+}
+
+.video-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%; 
+  overflow: hidden;
+}
+
+.video-container video {
+  /* Make video to at least 100% wide and tall */
+  min-width: 100%; 
+  min-height: 100%; 
+  
+  /* Setting width & height to auto prevents the browser from stretching or squishing the video */
+  width: auto;
+  height: auto;
+  
+  /* Center the video */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+  border:1px solid red;
+ width: 100%; 
+}
+
+/* Style the button used to pause/play the video */
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+
+
+  .post{
+    text-align:left;
+    }
+
+  @media only screen and (min-width:768px) {
+
+  .post{
+    padding-right:1em;
+    }
+  }
+
+.read-more{
+  padding-top:1.5em;
+ margin-left:-.5em;
+}
+
+.tour-price{
+  text-transform:uppercase;
+}
+table td{
+  text-align:left;
+}
+table{
+  border:1px solid #eee;
+}
+
+.levi-logo{
+  max-width:300px;
+}
